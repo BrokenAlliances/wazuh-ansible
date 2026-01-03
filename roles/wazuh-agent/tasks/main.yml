@@ -2,11 +2,11 @@
 
 - name: Importing variables [vars/main.yml]
   ansible.builtin.include_vars:
-    file: ../../vars/main.yml
+    file: /tmp/ansible/roles/vars/main.yml
 
 - name: Importing urls_file variables
   ansible.builtin.include_vars:
-    file: ../../vars/{{ urls_file }}
+    file: /tmp/ansible/roles/vars/{{ urls_file }}
 
 - name: Linux | Importing tasks for Linux systems
   ansible.builtin.include_tasks:

@@ -2,7 +2,7 @@
 
 - name: Importing variables [vars/main.yml]
   ansible.builtin.include_vars:
-    file: ../../vars/main.yml
+    file: /tmp/ansible/roles/vars/main.yml
 
 - name: Download package URLs file
   ansible.builtin.get_url:
